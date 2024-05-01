@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Binary_hex</string>
+    <string-array name="conversion_options">
+        <item>Binary</item>
+        <item>Hexadecimal</item>
+    </string-array>
+</resources>

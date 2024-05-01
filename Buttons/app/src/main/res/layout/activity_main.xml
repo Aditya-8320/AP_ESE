@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Buttons in the middle -->
+    <LinearLayout
+        android:id="@+id/ll_middle_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonMiddleLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Middle Left"
+            android:onClick="showToast"/>
+
+        <Button
+            android:id="@+id/buttonMiddleCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Middle Center"
+            android:onClick="showToast"/>
+
+        <Button
+            android:id="@+id/buttonMiddleRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Middle Right"
+            android:onClick="showToast"/>
+
+    </LinearLayout>
+
+    <!-- Buttons on corners -->
+    <LinearLayout
+        android:id="@+id/ll_top_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_middle_buttons"
+        android:layout_alignParentTop="true"
+        android:gravity="start">
+
+        <Button
+            android:id="@+id/buttonTopLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Left"
+            android:onClick="showToast"/>
+
+        <Button
+            android:id="@+id/buttonTopRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Right"
+            android:layout_marginStart="166dp"
+            android:onClick="showToast"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="start">
+
+        <Button
+            android:id="@+id/buttonBottomLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom Left"
+            android:onClick="showToast"/>
+
+        <Button
+            android:id="@+id/buttonBottomRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom Right"
+            android:layout_marginStart="136dp"
+            android:onClick="showToast"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
