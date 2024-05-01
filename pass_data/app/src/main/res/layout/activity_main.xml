@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:onClick="openLanguageActivity"
+        android:backgroundTint="#FF5722"
+        android:tag="Java"/>
+
+    <Button
+        android:id="@+id/buttonCpp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cpp"
+        android:onClick="openLanguageActivity"
+        android:backgroundTint="#00BCD4"
+        android:tag="Cpp"/>
+
+    <Button
+        android:id="@+id/buttonPython"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Python"
+        android:onClick="openLanguageActivity"
+        android:backgroundTint="#4CAF50"
+        android:tag="Python"/>
+
+    <Button
+        android:id="@+id/buttonJavascript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JavaScript"
+        android:onClick="openLanguageActivity"
+        android:backgroundTint="#673AB7"
+        android:tag="JavaScript"/>
+</LinearLayout>
